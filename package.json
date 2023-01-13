@@ -1,0 +1,20 @@
+{
+  "name": "p-one",
+  "version": "1.0.0",
+  "description": "in this repository I will upload all my projects seen in the midudev channel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JesusPlasencia/learning-react-w-midudev.git"
+  },
+  "keywords": [],
+  "author": "Jesus <jesusplasencia2508@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JesusPlasencia/learning-react-w-midudev/issues"
+  },
+  "homepage": "https://github.com/JesusPlasencia/learning-react-w-midudev#readme"
+}
