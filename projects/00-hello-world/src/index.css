@@ -1,7 +1,15 @@
 body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh;
     margin: 0;
     background: #222;
     font-family: system-ui;
-    display: grid;
-    place-content: center;
+    place-items: center;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
