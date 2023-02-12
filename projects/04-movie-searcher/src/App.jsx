@@ -1,32 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { useRef } from 'react'
 import './App.css'
+import { Movies } from './components/Movies'
+import { useMovies } from './hooks/useMovies'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const { movies } = useMovies()
+  const inputRef = useRef()
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    const inputEl = inputRef.current
+    const value = inputEl.value
+    console.log(value)
+  }
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className='page'>
+
+      <header>
+        <h1>Movie Search</h1>
+        <form className='form' onSubmit={handleSubmit}>
+          <input
+            ref={inputRef}
+            type='text'
+            placeholder='Avengers, Star Wars...'
+          />
+          <button type='submit'>Search</button>
+        </form>
+      </header>
+
+      <main>
+        <Movies movies={movies} />
+      </main>
     </div>
   )
 }
