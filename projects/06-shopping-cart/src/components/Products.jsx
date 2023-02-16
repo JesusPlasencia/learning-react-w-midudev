@@ -6,13 +6,14 @@ export const Products = ({ products }) => {
     <main className='products'>
       <ul>
         {
-            products.map(product => (
-              <li key={product.id}>
-                <img src={product.thumbnail} alt={product.title} />
-                <div>
-                  <strong>{product.title}</strong>
+            products.slice(1, 10).map(product => (
+              <li key={product.id} className='product'>
+                {/* <img src={product.thumbnail} alt={product.title} /> */}
+                <div className='product-image' />
+                <div className='product-name'>
+                  <strong>{product.title}</strong> - ${product.price}
                 </div>
-                <div>
+                <div className='product-add-cart'>
                   <button>
                     <AddToCartIcon />
                   </button>
