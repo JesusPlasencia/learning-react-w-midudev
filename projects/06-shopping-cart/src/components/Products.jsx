@@ -6,7 +6,7 @@ export const Products = ({ products }) => {
     <main className='products'>
       <ul>
         {
-            products.slice(1, 10).map(product => (
+            products.slice(0, 10).map(product => (
               <li key={product.id} className='product'>
                 <img src={product.thumbnail} alt={product.title} />
                 <div className='product-name'>
