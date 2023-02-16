@@ -8,8 +8,7 @@ export const Products = ({ products }) => {
         {
             products.slice(1, 10).map(product => (
               <li key={product.id} className='product'>
-                {/* <img src={product.thumbnail} alt={product.title} /> */}
-                <div className='product-image' />
+                <img src={product.thumbnail} alt={product.title} />
                 <div className='product-name'>
                   <strong>{product.title}</strong> - ${product.price}
                 </div>
