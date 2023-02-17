@@ -1,0 +1,33 @@
+.filters-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filter_price, .category-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.filter_price label, .filter_price strong {
+    font-size: 1.2rem;
+    font-family: Poppins, 'cursive';
+}
+
+#price {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.category-list label {
+    font-size: 1.2rem;
+    font-family: Poppins, 'cursive';
+}
+
+.category-list select {
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-family: Poppins, 'cursive';
+    border-radius: 10px;
+}

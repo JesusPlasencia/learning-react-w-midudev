@@ -1,5 +1,5 @@
 import './Products.css'
-import { AddToCartIcon } from './Icons.jsx'
+import { AddToCartIcon } from '../Icons/Icons.jsx'
 
 export const Products = ({ products }) => {
   return (
