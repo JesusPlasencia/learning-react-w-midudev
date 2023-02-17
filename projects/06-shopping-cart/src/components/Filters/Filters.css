@@ -1,7 +1,12 @@
 .filters-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter_price {
+    margin-bottom: 1rem;
 }
 
 .filter_price, .category-list {
@@ -11,7 +16,7 @@
 }
 
 .filter_price label, .filter_price strong {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-family: Poppins, 'cursive';
 }
 
@@ -30,4 +35,13 @@
     font-size: 1rem;
     font-family: Poppins, 'cursive';
     border-radius: 10px;
+}
+
+@media (min-width: 640px) {
+    .filters-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
 }
