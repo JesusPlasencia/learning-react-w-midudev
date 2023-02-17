@@ -1,6 +1,6 @@
 import { CartIcon, AddToCartIcon, ClearCartIcon, RemoveFromCartIcon } from './Icons'
 
-export default {
+export {
   CartIcon,
   AddToCartIcon,
   ClearCartIcon,
