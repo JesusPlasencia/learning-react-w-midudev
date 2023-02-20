@@ -11,3 +11,69 @@
     font-family: 'Lobster', cursive;
     font-size: 3.2rem;
 }
+
+.coin-container {
+    width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 400px;
+}
+
+.picker-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #dbdbdb;
+}
+
+.picker-input {
+    width: 40%;
+    text-align: center;
+    padding: 10px 20px;
+    align-self: center;
+    font-size: 1.3rem;
+}
+
+.picker-output {
+    width: 40%;
+    text-align: center;
+    padding: 10px 20px;
+    align-self: center;
+    font-size: 1.3rem;
+}
+
+.change-container {
+    width: 20%;
+    padding: 10px 10px;
+}
+
+.converter-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    height: 400px;
+}
+
+.input {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 0;
+}
+
+.output {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 200px;
+}
+
+.output-none {
+    display: none;
+}
