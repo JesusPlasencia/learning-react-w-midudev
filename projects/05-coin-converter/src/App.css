@@ -1,3 +1,17 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    height: 60px;
+    width: 60px;
+    margin-left: 0;
+    margin-right: 16px;
+}
+
 .page {
     display: flex;
     flex-direction: column;
@@ -32,6 +46,8 @@
     padding: 10px 20px;
     align-self: center;
     font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
 }
 
 .picker-output {
@@ -40,6 +56,17 @@
     padding: 10px 20px;
     align-self: center;
     font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.coin {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    background-color: #0a0f14;
+    margin-right: 10px;
+    border: 0.1px solid #fff;
 }
 
 .change-container {
@@ -65,6 +92,8 @@
     text-align: center;
     font-size: 2rem;
     border-radius: 0;
+    background-color: #2b3b4a;
+    border: 1px solid #fff;
 }
 
 .output {
@@ -72,6 +101,12 @@
     padding: 0;
     margin: 0;
     height: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 0;
+    border: 1px solid #fff
 }
 
 .output-none {

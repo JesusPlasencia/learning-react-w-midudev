@@ -410,7 +410,7 @@ select[multiple] {
   overflow-y: auto;
 }
 
-input:focus {
+/* input:focus {
   box-shadow: 0 0 0 2px #0096bfab;
   box-shadow: 0 0 0 2px var(--focus);
 }
@@ -428,7 +428,7 @@ button:focus {
 textarea:focus {
   box-shadow: 0 0 0 2px #0096bfab;
   box-shadow: 0 0 0 2px var(--focus);
-}
+} */
 
 input[type='checkbox']:active,
 input[type='radio']:active,

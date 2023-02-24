@@ -1,0 +1,41 @@
+.footer-open {
+    display: block;
+    position: fixed;
+    left: 0px;
+    top: 16px;
+    right: 0;
+    margin: 0 20px;
+    text-align: left;
+    background: rgba(0, 0, 0, .7);
+    padding: 8px 24px;
+    border-radius: 32px;
+    opacity: .95;
+    backdrop-filter: blur(8px);
+    font-size: 16px;
+  }
+  .footer-open h4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-open span {
+    font-size: 16px;
+    color: red;
+    opacity: .8;
+  }
+  
+  .footer-open .close {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+  .footer-open h4, .footer-open h5 {
+    margin: 0;
+    display: flex;
+  }
+
+  .footer-close {
+    display: none;
+  }
