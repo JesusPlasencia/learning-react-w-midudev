@@ -1,0 +1,23 @@
+.footer {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    margin: 0 20px;
+    text-align: left;
+    background: rgba(0, 0, 0, .7);
+    padding: 8px 24px;
+    border-radius: 32px;
+    opacity: .95;
+    backdrop-filter: blur(8px);
+    font-size: 1.2rem;
+}
+
+.footer h5 {
+    margin: 0;
+    display: flex;
+}
+
+.footer strong {
+    margin-left: 0.3rem;
+    font-weight: 700;
+}

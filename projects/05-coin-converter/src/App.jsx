@@ -1,37 +1,33 @@
 import './App.css'
-import './../node_modules/spin.js/spin.css'
-import { SvgIcon } from './components/SvgIcon/SvgIcon'
 import { useState } from 'react'
-import Alert from './components/Alert'
 
 // ! Components //
-
+import { SvgIcon } from './components/SvgIcon/SvgIcon'
+import Alert from './components/Alert'
+import Footer from './components/Footer'
 // ! Components //
 
 function App () {
   const [input, setInput] = useState('')
   const [hasError, setHasError] = useState(false)
-  const [isOutputAble, setIsOutputAble] = useState(false)
 
   const handleChangeInput = (event) => {
     const newInput = event.target.value.replace(/,/g, '').toString()
     console.log('newInput:', newInput)
     // const newInput = event.target.value
-    if (newInput.length === 16) {
+    if (newInput.length === 10) {
       return setHasError(true)
     }
     // if (newInput.startsWith('0')) {
     //   return
     // }
     if (newInput === '') {
-      setIsOutputAble(false)
       setInput(newInput)
       return
     }
     if (newInput.match(/^(?:\d*(.)?(\d{1,2})?)$/)) {
       console.log('Paso Prueba')
       setInput(newInput)
-      setIsOutputAble(true)
     }
   }
 
@@ -57,14 +53,14 @@ function App () {
         <section className='picker-container'>
           <div className='picker-input'>
             <div className='coin'>$</div>
-            Dollar
+            <p>USD</p>
           </div>
           <div className='change-container'>
             <SvgIcon iconName='change' />
           </div>
           <div className='picker-output'>
             <div className='coin'>€</div>
-            Euros
+            <p>EUR</p>
           </div>
         </section>
         <section className='converter-container'>
@@ -75,8 +71,8 @@ function App () {
           </div>
           <div className='output-container'>
             <input
-              className={isOutputAble ? 'output' : 'output-none'}
-              value={(parseFloat(input) * 0.95).toLocaleString('en-US')}
+              className='output'
+              value={(parseFloat(input) * 0.95 || 0.00).toLocaleString('en-US')}
               readOnly
             />
           </div>
@@ -84,6 +80,8 @@ function App () {
       </main>
 
       {hasError && <Alert />}
+
+      <Footer />
 
     </div>
   )
